@@ -1,0 +1,71 @@
+body {
+	font-family: helvetica;
+    margin: 0;
+    background-color: #131313;
+}
+table {
+    margin: auto;
+    border-spacing: 10px;
+    padding-top: 1.5%;
+}
+li {
+    list-style-type: none;
+}
+.channelList {
+    padding: 15px;
+    font-size: 13px;
+    background-color: #282828;
+}
+#streamList {
+    overflow-y: auto;
+}
+#streams:hover {
+    background-color: rgba(0,0,0,.2);
+    padding: 8px;
+}
+.channel {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 5px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 5px; /* Firefox */
+    padding-top: 5px;
+}
+.thumbnail {
+    width: 100%;
+    padding-left: 6px;
+}
+.title {
+    word-wrap: break-word;
+    font-size: 20px;
+    color: white;
+    line-height: 1.2em;
+    height: 2.35em;
+    overflow: hidden;
+    padding-left: 5px;
+}
+.titleViewer {
+    font-size: 15px;
+    color: #727272;
+}
+.menu {
+    color: white;
+    background-color: #191919;
+    width: 20vw;
+    height: 39.375vw;
+    margin: auto;
+    position: relative;
+}
+.viewerCount {
+    background-color: #282828;
+    position: absolute;
+    bottom: 0px;
+    width: 20vw;
+    color: #7f7f7f;
+}
+.aspect {
+	margin: auto;
+	width: 70vw;
+	height: 39.375vw;
+    background-color: #050505;
+}

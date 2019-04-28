@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thallium</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:locale" content="sl_SI">
+	<meta property="og:url" content="http://thallium.ddns.net">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Thallium live streaming">
+	<meta property="og:description" content="Simple low-latency live streaming site">
+	<meta property="og:image" content="http://thallium.ddns.net/angle-double-right.png">
+	<meta name="description" content="Simple live streaming site">
+	<meta name="author" content="Tjan LjubeÅ¡ek">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="borderBot">
+		<div class="container containerWide">
+			<ul class="stealth-ul">
+				<li class="navLink">
+					<h4><i class="fas fa-angle-double-right"></i> Thallium</h4>
+				</li>
+				<li class="navLink">
+					<a href="/" class="navBtn">Streams</a>
+				</li>
+				<li class="navLink">
+					<a href="/quickstart" class="navBtn">How to</a>
+				</li>
+				<li class="u-pull-right">
+					<a class="button button-primary" id="dark">Dark mode</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container containerWide paddingTopBot">
+		<div class="row">
+          <div class="nine columns" id="GrindPlayer">
+				<object width="100%" height="100%" data="GrindPlayer.swf">
+					<param name="allowFullScreen" value="true">
+					<param id="GrindPlayerVars" name="flashvars">
+				</object>
+          </div>
+			<div class="three columns menu">
+				<h5 id="stream" class="borderBot header">Live streams</h5>
+				<div id="streamList">
+					<ul id="streams" class="stealth-ul">
+						<li>No live channels</li>
+					</ul>
+				</div>
+				<span id="viewers" class="viewerCount borderTop redText"><i class="fas fa-user"></i> <span id="viewerCounter">0</span></span>
+      		</div>
+        </div>
+	</div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/player.js"></script>
+
+</html>

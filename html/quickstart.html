@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quickstart guide - Thallium</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:locale" content="sl_SI">
+	<meta property="og:url" content="http://thallium.ddns.net">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Thallium live streaming">
+	<meta property="og:description" content="Simple low-latency live streaming site">
+	<meta property="og:image" content="http://thallium.ddns.net/angle-double-right.png">
+	<meta name="description" content="Simple live streaming site">
+	<meta name="author" content="Tjan LjubeÅ¡ek">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="borderBot">
+		<div class="container containerWide">
+			<ul class="stealth-ul">
+				<li class="navLink">
+					<h4><i class="fas fa-angle-double-right"></i> Thallium</h4>
+				</li>
+				<li class="navLink">
+					<a href="/" class="navBtn">Streams</a>
+				</li>
+				<li class="navLink">
+					<a href="" class="navBtn">How to</a>
+				</li>
+				<li class="u-pull-right">
+					<a class="button button-primary" id="dark">Dark mode</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container paddingTopBot">
+		<div class="row">
+			<h5 class="header">Quickstart guide</h5>
+		</div>
+		<div class="row">
+			<h5>1. Download Open Broadcaster Software (OBS Studio)</h5>
+			<p>OBS Studio is free and open source software for video recording and live streaming.<br>
+				It is the re-write of the widely used Open Broadcaster Software, to allow even more features and multi-platform support. Currently Linux, Mac and Windows Builds are available.</p>
+			<p>Download OBS Studio: <a href="https://obsproject.com/download">https://obsproject.com/download</a></p>
+		</div>
+		<div class="row paddingBot">
+			<h5>2. Stream configuration</h5>
+			<p>
+				<ul>
+					<li><b>Stream type:</b> Custom Streaming Server</li>
+					<li><b>URL:</b> rtmp://thallium.ddns.net/live</li>
+					<li><b>Stream Key:</b> Any alphanumeric combination (this will also be yout title)</li>
+				</ul>
+				<a href="/imgs/obs-stream.png"><img class="offset-by-one ten columns" src="/imgs/obs-stream.png"></a>
+			</p>
+		</div>
+		<div class="row paddingBot">
+			<h5>3. Output configuration</h5>
+			<p>
+				<ul>
+					<li><b>Output Mode:</b> Advanced</li>
+					<li><b>Bitrate:</b> 3500 kb/s is maximum bitrate that is allowed (this also depends on your upload speed)</li>
+					<li><b>Keyframe Interval:</b> 2</li>
+					<li><b>CPU Usage Preset:</b> depends on your CPU, but <b>veryfast</b> preset is usually OK</li>
+					<li><b>Profile:</b> high</li>
+					<li><b>Tune:</b> zerolatency</li>
+				</ul>
+				<a href="/imgs/obs-output.png"><img class="offset-by-one ten columns" src="/imgs/obs-output.png"></a>
+			</p>
+		</div>
+		<div class="row paddingBot">
+			<h5>4. Video configuration</h5>
+			<p>
+				<ul>
+					<li><b>Base (Canvas) Resolution:</b> Same resolution as your monitor</li>
+					<li><b>Output (Scaled) Resolution:</b> Resolution of your stream (commonly 1280x720)</li>
+					<li><b>FPS:</b> Higher FPS uses more CPU (30 FPS is usually fine)</li>
+				</ul>
+				<a href="/imgs/obs-video.png"><img class="offset-by-one ten columns" src="/imgs/obs-video.png"></a>
+			</p>
+		</div>
+		<div class="row paddingBot">
+			<h5>5. Scene and additional configuration</h5>
+			<p>
+				For additional information on how to use OBS Studio and go live, follow this <a href="https://obsproject.com/wiki/OBS-Studio-Quickstart">LINK</a>
+			</p>
+		</div>
+	</div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

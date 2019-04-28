@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thallium Player</title>
+</head>
+<link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/stylesheet_old.css">
+
+<body>
+
+	<table>
+		<tr>
+			<td>
+				<div id="GrindPlayer" class="aspect">
+					<object width="100%" height="100%" data="GrindPlayer.swf">
+						<param name="allowFullScreen" value="true">
+						<param id="GrindPlayerVars" name="flashvars">
+					</object>
+				</div>
+			</td>
+			<td>
+				<div id="menu" class="menu">
+
+					<div class="channelList">
+						<label><b>Live channels</b></label>
+					</div>
+
+					<div id="streamList">
+
+						<div style="padding: 0 15px 0 15px;">
+							<ul id="streams" style="padding: 0;">
+								<li>No live channels</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="viewerCount">
+
+						<div style="padding: 15px; ">
+							<label>Viewers: <span id="viewerCounter">0</span></label>
+						</div>
+
+					</div>
+				</div>	
+			</td>
+		</tr>
+	</table>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="js/main_old.js"></script>
+
+</html>
